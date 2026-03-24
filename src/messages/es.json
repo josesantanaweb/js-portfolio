@@ -1,0 +1,7 @@
+{
+  "HomePage": {
+    "title": "Hola, este texto esta en espanol",
+    "description": "Cambia la ruta entre /es y /en para verificar el idioma.",
+    "switchToEnglish": "Ir a ingles"
+  }
+}
