@@ -1,6 +1,7 @@
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n';
+import Header from '@/components/layout/header';
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -17,5 +18,10 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  return <NextIntlClientProvider>{children}</NextIntlClientProvider>;
+  return (
+    <NextIntlClientProvider>
+      <Header />
+      {children}
+    </NextIntlClientProvider>
+  );
 }
