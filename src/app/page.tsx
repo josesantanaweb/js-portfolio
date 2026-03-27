@@ -1,5 +1,5 @@
-import {redirect} from '@/navigation';
+import { redirect } from '@/navigation'
 
 export default function RootPage() {
-  redirect({href: '/', locale: 'es'});
+  redirect({ href: '/', locale: 'es' })
 }

@@ -1,30 +1,62 @@
-'use client';
-import TypingText from '@/components/typing-text';
-import { ArrowInDownSquareHalf } from '@boxicons/react';
+'use client'
+import TypingText from '@/components/typing-text'
+import { ArrowInDownSquareHalf } from '@boxicons/react'
 
 const MainSection = () => {
-    return (
-        <div className="w-full h-screen flex items-center justify-center">
-            <div className="flex flex-col w-1/2 gap-8">
-                <div className="flex self-start items-center gap-2 bg-primary-bg border border-primary-border rounded-full px-3 h-8">
-                    <span className="w-2 h-2 bg-green-500 rounded-full" />
-                    <p className='text-primary-text text-xs uppercase font-semibold'>Available for projects - 2026</p>
-                </div>
-                <h1 className="text-7xl font-black text-white">José <span className="bg-linear-to-r from-primary-text to-foreground bg-clip-text text-transparent">Santana</span></h1>
-                <p className="text-primary-text text-xl">I&apos;m <span className="text-white font-semibold">José Santana</span>, a professional <TypingText /><br />
-                    Dedicated to building high-performance, user-centric web applications.</p>
-                <div className="flex items-center gap-6">
-                    <button className="bg-white rounded-full px-6 h-14 uppercase font-semibold text-primary-bg cursor-pointer flex items-center gap-3 justify-center">
-                        view my work
-                    </button>
-                    <button className="bg-primary-bg border border-primary-border rounded-full px-6 h-14 uppercase cursor-pointer font-semibold text-white flex items-center gap-3 justify-center">
-                        get resume
-                        <ArrowInDownSquareHalf />
-                    </button>
-                </div>
-            </div>
+  return (
+    <div className="container mx-auto flex h-screen w-full items-center justify-center">
+      <div className="flex w-1/2 flex-col gap-8">
+        <div className="bg-surface border-stroke flex h-8 items-center gap-2 self-start rounded-full border px-3">
+          <span className="bg-success h-2 w-2 rounded-full shadow-[0_0_6px_1px_rgba(24,235,182,0.6)]" />
+          <p className="text-muted text-xs font-semibold uppercase">
+            Available for projects - 2026
+          </p>
         </div>
-    );
-};
+        <h1 className="text-ink text-7xl font-black">
+          José{' '}
+          <span
+            className="bg-clip-text text-transparent"
+            style={{
+              backgroundImage:
+                'linear-gradient(to right, var(--name-gradient-from), var(--name-gradient-to))',
+            }}
+          >
+            Santana
+          </span>
+        </h1>
+        <p className="text-muted text-xl">
+          I&apos;m <span className="text-ink font-semibold">José Santana</span>,
+          a professional <TypingText />
+          <br />
+          Dedicated to building high-performance, user-centric web applications.
+        </p>
+        <div className="flex items-center gap-6">
+          <button className="bg-ink text-canvas flex h-14 cursor-pointer items-center justify-center gap-3 rounded-full px-6 font-semibold uppercase">
+            view my work
+          </button>
+          <button className="bg-surface border-stroke text-ink flex h-14 cursor-pointer items-center justify-center gap-3 rounded-full border px-6 font-semibold uppercase">
+            get resume
+            <ArrowInDownSquareHalf />
+          </button>
+        </div>
+      </div>
+      <div className="bg-background border-stroke flex h-[370px] w-1/2 overflow-hidden rounded-2xl border">
+        <div className="bg-surface flex h-14 w-full justify-between px-4">
+          <div className="flex items-center gap-2">
+            <span className="bg-error h-3 w-3 rounded-full" />
+            <span className="bg-warning h-3 w-3 rounded-full" />
+            <span className="bg-success h-3 w-3 rounded-full" />
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-purple-500" />
+            <p className="text-muted font-mono text-sm font-semibold">
+              Portfolio.tsx
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
-export default MainSection;
+export default MainSection

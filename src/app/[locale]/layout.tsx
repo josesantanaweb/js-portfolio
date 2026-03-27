@@ -1,21 +1,21 @@
-import {NextIntlClientProvider, hasLocale} from 'next-intl';
-import {notFound} from 'next/navigation';
-import {routing} from '@/i18n';
-import Header from '@/components/layout/header';
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
+import { notFound } from 'next/navigation'
+import { routing } from '@/i18n'
+import Header from '@/components/layout/header'
 
 type LocaleLayoutProps = {
-  children: React.ReactNode;
-  params: Promise<{locale: string}>;
-};
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
+}
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: LocaleLayoutProps) {
-  const {locale} = await params;
+  const { locale } = await params
 
   if (!hasLocale(routing.locales, locale)) {
-    notFound();
+    notFound()
   }
 
   return (
@@ -23,5 +23,5 @@ export default async function LocaleLayout({
       <Header />
       {children}
     </NextIntlClientProvider>
-  );
+  )
 }

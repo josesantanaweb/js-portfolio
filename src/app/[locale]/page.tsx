@@ -1,14 +1,14 @@
-import {getTranslations} from 'next-intl/server';
-import {Link} from '@/navigation';
-import MainSection from '@/features/main-section';
+import { getTranslations } from 'next-intl/server'
+import { Link } from '@/navigation'
+import MainSection from '@/features/main-section'
 
 type HomePageProps = {
-  params: Promise<{locale: string}>;
-};
+  params: Promise<{ locale: string }>
+}
 
-export default async function HomePage({params}: HomePageProps) {
-  const {locale} = await params;
-  const t = await getTranslations('HomePage');
+export default async function HomePage({ params }: HomePageProps) {
+  const { locale } = await params
+  const t = await getTranslations('HomePage')
 
   return (
     <main className="mx-auto min-h-screen w-full">
@@ -24,5 +24,5 @@ export default async function HomePage({params}: HomePageProps) {
         </Link>
       )}
     </main>
-  );
+  )
 }
