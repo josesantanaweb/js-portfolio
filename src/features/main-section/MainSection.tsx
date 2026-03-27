@@ -1,6 +1,7 @@
 'use client'
-import TypingText from '@/components/typing-text'
 import { ArrowInDownSquareHalf } from '@boxicons/react'
+import TypingText from '@/components/typing-text'
+import CodeBox from '@/components/code-box'
 
 const MainSection = () => {
   return (
@@ -40,21 +41,7 @@ const MainSection = () => {
           </button>
         </div>
       </div>
-      <div className="bg-background border-stroke flex h-[370px] w-1/2 overflow-hidden rounded-2xl border">
-        <div className="bg-surface flex h-14 w-full justify-between px-4">
-          <div className="flex items-center gap-2">
-            <span className="bg-error h-3 w-3 rounded-full" />
-            <span className="bg-warning h-3 w-3 rounded-full" />
-            <span className="bg-success h-3 w-3 rounded-full" />
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-purple-500" />
-            <p className="text-muted font-mono text-sm font-semibold">
-              Portfolio.tsx
-            </p>
-          </div>
-        </div>
-      </div>
+      <CodeBox />
     </div>
   )
 }
