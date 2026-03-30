@@ -56,6 +56,9 @@ const Header = () => {
           <ToggleTheme />
         </nav>
       </div>
+      <div className="fixed inset-0 -z-20">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgb(79_79_79/10%)_1px,transparent_1px),linear-gradient(to_bottom,rgb(79_79_79/10%)_1px,transparent_1px)] bg-size-[24px_24px]" />
+      </div>
     </header>
   )
 }

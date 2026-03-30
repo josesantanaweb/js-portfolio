@@ -8,10 +8,10 @@ type TypingTextProps = {
 }
 
 const DEFAULT_TEXTS = [
-  'Developer.',
-  'Frontend Engineer.',
-  'UI Enthusiast.',
-  'Problem Solver.',
+  'UI/UX Designer.',
+  'Software Engineer.',
+  'Full Stack Developer.',
+  'Mobile Developer.',
 ]
 
 const DEFAULT_TYPING_SPEED = 90
