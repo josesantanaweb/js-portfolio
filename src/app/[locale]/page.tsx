@@ -11,9 +11,9 @@ export default async function HomePage({ params }: HomePageProps) {
   const t = await getTranslations('HomePage')
 
   return (
-    <main className="mx-auto min-h-screen w-full">
+    <main className="mx-auto w-full">
       <MainSection />
-
+{/* 
       {locale === 'es' ? (
         <Link href="/" locale="en" className="underline">
           {t('switchToEnglish')}
@@ -22,7 +22,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <Link href="/" locale="es" className="underline">
           {t('switchToSpanish')}
         </Link>
-      )}
+      )} */}
     </main>
   )
 }

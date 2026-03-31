@@ -1,6 +1,6 @@
 'use client'
 import { ArrowInDownSquareHalf } from '@boxicons/react'
-import TypingText from '@/components/typing-text'
+import TypingText from '@/features/main-section/components/typing-text'
 
 const MainInfo = () => {
   return (
