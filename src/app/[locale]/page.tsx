@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server'
-import { Link } from '@/navigation'
 import MainSection from '@/features/main-section'
+import AboutMe from '@/features/about-me'
 
 type HomePageProps = {
   params: Promise<{ locale: string }>
@@ -13,7 +13,8 @@ export default async function HomePage({ params }: HomePageProps) {
   return (
     <main className="mx-auto w-full">
       <MainSection />
-{/* 
+      <AboutMe />
+{/*
       {locale === 'es' ? (
         <Link href="/" locale="en" className="underline">
           {t('switchToEnglish')}

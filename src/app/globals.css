@@ -11,8 +11,9 @@
   --warning: #f2c94c;
   --error: #eb5757;
   --stroke: #e2e8f0;
-  --name-gradient-from: #737373;
-  --name-gradient-to: #1F1F1F;
+  --primary-gradient-from: #737373;
+  --primary-gradient-to: #1f1f1f;
+  --inverse: #0f172a;
 }
 
 @theme inline {
@@ -24,6 +25,7 @@
   --color-warning: var(--warning);
   --color-error: var(--error);
   --color-stroke: var(--stroke);
+  --color-inverse: var(--inverse);
 
   --color-background: var(--canvas);
   --color-foreground: var(--ink);
@@ -45,8 +47,9 @@
   --warning: #f2c94c;
   --error: #eb5757;
   --stroke: #262626;
-  --name-gradient-from: #737373;
-  --name-gradient-to: #1F1F1F;
+  --primary-gradient-from: #3f3f3f;
+  --primary-gradient-to: #1f1f1f;
+  --inverse: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,8 +63,9 @@
     --warning: #f2c94c;
     --error: #eb5757;
     --stroke: #262626;
-    --name-gradient-from: #737373;
-    --name-gradient-to: #1F1F1F;
+    --primary-gradient-from: #3f3f3f;
+    --primary-gradient-to: #1f1f1f;
+    --inverse: #ffffff;
   }
 }
 

@@ -17,7 +17,7 @@ const MainInfo = () => {
             className="bg-clip-text text-transparent"
             style={{
               backgroundImage:
-                'linear-gradient(to right, var(--name-gradient-from), var(--name-gradient-to))',
+                'linear-gradient(to right, var(--primary-gradient-from), var(--primary-gradient-to))',
             }}
           >
             Santana
