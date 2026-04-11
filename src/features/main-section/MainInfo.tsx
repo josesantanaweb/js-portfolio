@@ -1,8 +1,8 @@
 'use client'
 import { ArrowInDownSquareHalf } from '@boxicons/react'
-import TypingText from '@/features/main-section/components/typing-text'
+import { TypingText } from './TypingText'
 
-const MainInfo = () => {
+export const MainInfo = () => {
   return (
     <div className="flex w-1/2 flex-col gap-8">
         <div className="bg-surface border-stroke flex h-8 items-center gap-2 self-start rounded-full border px-3">
@@ -30,7 +30,7 @@ const MainInfo = () => {
           Dedicated to building high-performance, user-centric web applications.
         </p>
         <div className="flex items-center gap-6">
-          <button className="bg-ink text-canvas flex h-14 cursor-pointer items-center justify-center gap-3 rounded-full px-6 font-semibold uppercase">
+          <button className="bg-primary text-white flex h-14 cursor-pointer items-center justify-center gap-3 rounded-full px-6 font-semibold uppercase">
             view my work
           </button>
           <button className="bg-surface border-stroke text-ink flex h-14 cursor-pointer items-center justify-center gap-3 rounded-full border px-6 font-semibold uppercase">
@@ -41,5 +41,3 @@ const MainInfo = () => {
       </div>
   )
 }
-
-export default MainInfo

@@ -1,10 +1,9 @@
 'use client'
 import Link from 'next/link'
 import { Menu } from '@boxicons/react'
-import Logo from '@/components/logo'
-import ToggleTheme from '@/components/toggle-theme'
+import { ToggleTheme, Logo } from '@/components/common'
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className="bg-canvas">
       <div className="container mx-auto flex h-15 items-center justify-between px-4">
@@ -62,5 +61,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header

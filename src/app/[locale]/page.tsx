@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import MainSection from '@/features/main-section'
-import AboutMe from '@/features/about-me'
+import { AboutMe, MainSection } from '@/features'
 
 type HomePageProps = {
   params: Promise<{ locale: string }>

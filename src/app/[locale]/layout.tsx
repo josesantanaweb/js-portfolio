@@ -1,7 +1,7 @@
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n'
-import Header from '@/components/layout/header'
+import { Header } from '@/components/layout'
 
 type LocaleLayoutProps = {
   children: React.ReactNode

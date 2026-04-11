@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 
-const Photo = () => {
+export const Photo = () => {
   return (
     <div className="flex w-1/2">
       <div className="flex w-[590px] h-[590px] rounded-3xl border border-stroke p-5">
@@ -10,5 +10,3 @@ const Photo = () => {
     </div>
   )
 }
-
-export default Photo

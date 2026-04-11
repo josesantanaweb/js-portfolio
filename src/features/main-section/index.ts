@@ -1,1 +1,5 @@
-export { default } from './MainSection'
+export * from './CodeBox'
+export * from './MainInfo'
+export * from './ScrollDown'
+export * from './Socials'
+export * from './TypingText'

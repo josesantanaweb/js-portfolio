@@ -6,7 +6,7 @@ interface LogoProps {
   variant?: 'dark' | 'light'
 }
 
-const Logo = ({ variant = 'dark' }: LogoProps) => {
+export const Logo = ({ variant = 'dark' }: LogoProps) => {
   return (
     <Link href="/">
       <Image
@@ -23,5 +23,3 @@ const Logo = ({ variant = 'dark' }: LogoProps) => {
     </Link>
   )
 }
-
-export default Logo

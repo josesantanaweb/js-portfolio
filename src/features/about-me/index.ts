@@ -1,1 +1,3 @@
-export { default } from './AboutMe'
+export * from './Bio'
+export * from './Metrics'
+export * from './Photo'

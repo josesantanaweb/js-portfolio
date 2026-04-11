@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 
-const ScrollDown = () => {
+export const ScrollDown = () => {
   return (
     <motion.div
       className='absolute right-0 bottom-4 left-1/2 flex -translate-x-1/2 flex-col items-center justify-center gap-3 py-2'
@@ -15,5 +15,3 @@ const ScrollDown = () => {
     </motion.div>
   )
 }
-
-export default ScrollDown

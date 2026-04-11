@@ -1,6 +1,6 @@
 'use client'
 
-const Bio = () => {
+export const Bio = () => {
   return (
     <div className="flex flex-col p-6 border-stroke border rounded-2xl relative bg-surface">
       <span className="absolute top-10 left-0 w-1 h-15 bg-muted" style={{
@@ -12,5 +12,3 @@ const Bio = () => {
     </div>
   )
 }
-
-export default Bio

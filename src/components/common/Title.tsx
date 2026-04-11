@@ -5,7 +5,7 @@ interface TitleProps {
   highlight: string
 }
 
-const Title = ({ text, highlight }: TitleProps) => {
+export const Title = ({ text, highlight }: TitleProps) => {
   return (
     <h1 className="text-ink text-7xl font-black">
       {text}{' '}
@@ -21,5 +21,3 @@ const Title = ({ text, highlight }: TitleProps) => {
     </h1>
   )
 }
-
-export default Title

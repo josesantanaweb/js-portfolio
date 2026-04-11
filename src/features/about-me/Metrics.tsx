@@ -1,6 +1,6 @@
 'use client'
 
-const Metrics = () => {
+export const Metrics = () => {
   return (
     <div className="flex items-center">
     <div className="flex items-start justify-start flex-col">
@@ -20,5 +20,3 @@ const Metrics = () => {
   </div>
   )
 }
-
-export default Metrics

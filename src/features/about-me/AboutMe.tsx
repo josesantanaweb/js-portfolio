@@ -1,12 +1,9 @@
 'use client'
-import Section from '@/components/layout/section'
-import Photo from "@/features/about-me/components/photo"
-import Metrics from "@/features/about-me/components/metrics"
-import Bio from "@/features/about-me/components/bio"
-import Title from "@/components/title"
-import SubTitle from "@/components/subtitle"
+import { Section } from '@/components/layout'
+import { Metrics, Photo, Bio } from "@/features/about-me"
+import { SubTitle, Title } from "@/components/common"
 
-const AboutMe = () => {
+export const AboutMe = () => {
   return (
     <Section>
       <div className="flex items-center justify-center gap-10">
@@ -23,5 +20,3 @@ const AboutMe = () => {
     </Section>
   )
 }
-
-export default AboutMe

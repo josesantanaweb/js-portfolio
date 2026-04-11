@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Sun, Moon } from '@boxicons/react'
 import { AnimatePresence, motion } from 'framer-motion'
 
-const ToggleTheme = () => {
+export const ToggleTheme = () => {
   const [theme, setTheme] = useState('light')
 
   const handleToggleTheme = () => {
@@ -33,5 +33,3 @@ const ToggleTheme = () => {
     </button>
   )
 }
-
-export default ToggleTheme

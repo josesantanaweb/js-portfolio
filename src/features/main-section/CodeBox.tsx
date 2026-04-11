@@ -1,6 +1,6 @@
 'use client'
 
-const CodeBox = () => {
+export const CodeBox = () => {
 
   const developer = {
     fullName: 'Jose Santana',
@@ -59,5 +59,4 @@ const CodeBox = () => {
     </div>
   )
 }
-export default CodeBox
 

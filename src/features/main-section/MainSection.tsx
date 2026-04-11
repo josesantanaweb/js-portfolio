@@ -1,11 +1,8 @@
 'use client'
-import Section from '@/components/layout/section'
-import CodeBox from '@/features/main-section/components/code-box'
-import MainInfo from '@/features/main-section/components/main-info'
-import ScrollDown from '@/features/main-section/components/scroll-down'
-import Socials from '@/features/main-section/components/socials'
+import { Section } from '@/components/layout'
+import { CodeBox, MainInfo, ScrollDown, Socials } from '@/features/main-section'
 
-const MainSection = () => {
+export const MainSection = () => {
   return (
     <Section isMain>
       <MainInfo />
@@ -15,5 +12,3 @@ const MainSection = () => {
     </Section>
   )
 }
-
-export default MainSection

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Fira_Code, Inter } from 'next/font/google'
+import { GradientCanvas } from '@/components/common'
 import './globals.css'
 
 const inter = Inter({
@@ -44,7 +45,8 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${firaCode.variable} h-full antialiased`}
     >
-      <body className="bg-canvas text-ink flex min-h-full flex-col">
+      <body className="bg-canvas text-ink relative flex min-h-full flex-col">
+        <GradientCanvas />
         {children}
       </body>
     </html>

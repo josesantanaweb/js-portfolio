@@ -18,7 +18,7 @@ const DEFAULT_TYPING_SPEED = 90
 const DEFAULT_DELETING_SPEED = 55
 const DEFAULT_PAUSE_MS = 1200
 
-const TypingText = ({ texts = DEFAULT_TEXTS }: TypingTextProps) => {
+export const TypingText = ({ texts = DEFAULT_TEXTS }: TypingTextProps) => {
   const safeTexts = texts.length > 0 ? texts : DEFAULT_TEXTS
   const [textIndex, setTextIndex] = useState(0)
   const [visibleText, setVisibleText] = useState('')
@@ -63,5 +63,3 @@ const TypingText = ({ texts = DEFAULT_TEXTS }: TypingTextProps) => {
     </span>
   )
 }
-
-export default TypingText
