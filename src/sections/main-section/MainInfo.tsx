@@ -1,5 +1,6 @@
 'use client'
 import { ArrowInDownSquareHalf } from '@boxicons/react'
+import { Button } from '@/components/ui'
 import { TypingText } from './TypingText'
 
 export const MainInfo = () => {
@@ -30,13 +31,11 @@ export const MainInfo = () => {
           Dedicated to building high-performance, user-centric web applications.
         </p>
         <div className="flex items-center gap-6">
-          <button className="bg-primary text-white flex h-14 cursor-pointer items-center justify-center gap-3 rounded-full px-6 font-semibold uppercase">
-            view my work
-          </button>
-          <button className="bg-surface border-stroke text-ink flex h-14 cursor-pointer items-center justify-center gap-3 rounded-full border px-6 font-semibold uppercase">
+          <Button variant="primary">view my work</Button>
+          <Button variant="secondary">
             get resume
             <ArrowInDownSquareHalf />
-          </button>
+          </Button>
         </div>
       </div>
   )

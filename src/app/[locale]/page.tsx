@@ -1,28 +1,32 @@
-import { getTranslations } from 'next-intl/server'
-import { AboutMe, MainSection } from '@/features'
+import { AboutMe, MainSection } from '@/sections'
+
+const ANCHOR_SECTIONS = [
+  ['experience', 'Experience'],
+  ['skills', 'Skills'],
+  ['projects', 'Projects'],
+  ['blog', 'Blog'],
+  ['contact', 'Contact'],
+] as const
 
 type HomePageProps = {
   params: Promise<{ locale: string }>
 }
 
 export default async function HomePage({ params }: HomePageProps) {
-  const { locale } = await params
-  const t = await getTranslations('HomePage')
+  await params
 
   return (
     <main className="mx-auto w-full">
       <MainSection />
       <AboutMe />
-{/*
-      {locale === 'es' ? (
-        <Link href="/" locale="en" className="underline">
-          {t('switchToEnglish')}
-        </Link>
-      ) : (
-        <Link href="/" locale="es" className="underline">
-          {t('switchToSpanish')}
-        </Link>
-      )} */}
+      {ANCHOR_SECTIONS.map(([id, title]) => (
+        <section
+          key={id}
+          id={id}
+          aria-label={title}
+          className="border-stroke scroll-mt-16 border-t py-16"
+        />
+      ))}
     </main>
   )
 }

@@ -1,7 +1,15 @@
 'use client'
-import Link from 'next/link'
 import { Menu } from '@boxicons/react'
 import { ToggleTheme, Logo } from '@/components/common'
+
+const LINKS = [
+  { hash: 'about', label: 'About' },
+  { hash: 'experience', label: 'Experience' },
+  { hash: 'skills', label: 'Skills' },
+  { hash: 'projects', label: 'Projects' },
+  { hash: 'blog', label: 'Blog' },
+  { hash: 'contact', label: 'Contact' },
+] as const
 
 export const Header = () => {
   return (
@@ -16,42 +24,15 @@ export const Header = () => {
           <Menu />
         </button>
         <nav className="hidden h-full items-center gap-9 md:flex">
-          <Link
-            href="/"
-            className="text-ink flex h-full items-center text-[1rem]"
-          >
-            About
-          </Link>
-          <Link
-            href="/"
-            className="text-ink flex h-full items-center text-[1rem]"
-          >
-            Experience
-          </Link>
-          <Link
-            href="/"
-            className="text-ink flex h-full items-center text-[1rem]"
-          >
-            Skill
-          </Link>
-          <Link
-            href="/"
-            className="text-ink flex h-full items-center text-[1rem]"
-          >
-            Project
-          </Link>
-          <Link
-            href="/"
-            className="text-ink flex h-full items-center text-[1rem]"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/"
-            className="text-ink flex h-full items-center text-[1rem]"
-          >
-            Contact
-          </Link>
+          {LINKS.map((link) => (
+            <a
+              key={link.hash}
+              href={`#${link.hash}`}
+              className="text-ink hover:text-primary flex h-full items-center text-[1rem] transition-all"
+            >
+              {link.label}
+            </a>
+          ))}
           <ToggleTheme />
         </nav>
       </div>
