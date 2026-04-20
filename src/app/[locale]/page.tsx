@@ -1,11 +1,11 @@
-import { AboutMe, MainSection } from '@/sections'
+import { AboutMe, MainSection, Technologies } from '@/sections'
 
 const ANCHOR_SECTIONS = [
   ['experience', 'Experience'],
-  ['skills', 'Skills'],
-  ['projects', 'Projects'],
-  ['blog', 'Blog'],
-  ['contact', 'Contact'],
+  ['technologies', 'Technologies'],
+  // ['projects', 'Projects'],
+  // ['blog', 'Blog'],
+  // ['contact', 'Contact'],
 ] as const
 
 type HomePageProps = {
@@ -19,14 +19,15 @@ export default async function HomePage({ params }: HomePageProps) {
     <main className="mx-auto w-full">
       <MainSection />
       <AboutMe />
-      {ANCHOR_SECTIONS.map(([id, title]) => (
+      <Technologies />
+      {/* {ANCHOR_SECTIONS.map(([id, title]) => (
         <section
           key={id}
           id={id}
           aria-label={title}
           className="border-stroke scroll-mt-16 border-t py-16"
         />
-      ))}
+      ))} */}
     </main>
   )
 }

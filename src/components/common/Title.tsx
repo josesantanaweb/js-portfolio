@@ -3,12 +3,14 @@
 interface TitleProps {
   text: string
   highlight: string
+  twoWords?: boolean
 }
 
-export const Title = ({ text, highlight }: TitleProps) => {
+export const Title = ({ text, highlight, twoWords }: TitleProps) => {
   return (
     <h1 className="text-ink text-7xl font-black">
-      {text}{' '}
+      {text}
+      {twoWords ? ' ' : null}
       <span
         className="bg-clip-text text-transparent"
         style={{

@@ -10,7 +10,7 @@ export const AboutMe = () => {
         <div className="flex w-1/2 flex-col gap-10">
           <div className="flex flex-col gap-8">
             <SubTitle text="Biography" />
-            <Title text="About" highlight="Me" />
+            <Title text="About" highlight="Me" twoWords />
           </div>
           <Bio />
           <Metrics />
